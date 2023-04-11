@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Test 01 - Programmer Syncore</title>
+</head>
+<body>
+
+  <div class="wrapper mx-52 my-16">
+    
+    <div class="header border-4 border-sky-600 rounded-sm bg-white/30 p-16 text-center shadow-md backdrop-blur-md my-24">
+      <h1 class="text-5xl text-white font-medium">Test 01 - Programmer Syncore</h1>
+    </div>
+
+    <div class="card shadow-md bg-white/60 p-10 backdrop-blur-sm border-2 border-sky-600 rounded ">
+      <div class="card-content grid grid-flow-row auto-rows-max divide-y divide-sky-600">
+        <!-- Question No. 1 -->
+        <div class="question-box pb-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">1.	Mengapa setiap bahasa pemrograman itu terdapat framework, apa kegunaan framework?</h2>
+          </div>
+          <div class="answer">
+            <p><b>Framework</b> adalah sebuah kerangka dalam pengembangan aplikasi. <b>Framework</b> dapat disusun dari satu bahasa pemrograman utama atau/dan dapat menggunakan berbagai jenis bahasa pemrograman. Adanya <b>Framework</b> pada suatu pemrograman dapat memudahkan developer dalam mengembangkan program atau aplikasi. Selain memudahkan, <b>framework</b> juga mempercepat kinerja developer. Hal ini karena sudah tersedianya susunan atau kerangka dalam framework tersebut. Tak jarang pula sebuah <b>framework</b> sudah dilengkapi dengan berbagai macam library ataupun tools yang dapat digunakan developer agar mempercepat pengerjaan.</p>
+          </div>
+        </div>
+
+        <!-- Question No. 2 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">2.	Jelaskan mengenai fungsi dan penggunaan if else, while, while do, switch case, for, foreach?</h2>
+          </div>
+          <div class="answer">
+            <ul class="list-disc ml-11">
+              <!-- If Else -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">If Else</h3>
+                <p  class="py-2">
+                  <b>If Else (Percabangan)</b> merupakan fungsi yang memberikan output dengan kondisi tertentu. Melalui permisalan, dapat dicontohkan seperti ini : 
+                  <pre class="border border-sky-600 p-3 my-3">Jika harga kopi lebih besar dari 30.000, maka uang tidak cukup. Jika harga kopi kurang dari 30.000, maka lakukan pembelian!</pre>
+                  Maka dapat dipastikan, program akan melakukan pengecekan saldo dan melakukan perintah berdasarkan jumlah saldo dompet anda. Pada program (PHP) dapat dilakukan dengan perintah dasar seperti :
+                  <pre class="border border-sky-600 p-3 my-3">
+  if($price > $balance){
+    echo "Saldo tidak cukup";
+  } else {
+    // do transaction;
+  }</pre>
+                </p>
+         
+                <p class="py-2">
+                  Pada <b>percabangan</b>, biasanya terdapat 3 kondisi, yaitu <b>If</b>, <b>if else</b>, <b>else</b>.
+                </p>
+              </li>
+              
+              <!-- While -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">While</h3>
+                <p class="py-2"><b>While</b> merupakan salah satu fungsi perulangan yang melakukan perulangan tanpa batas hingga menemukan kondisi tertentu. Fungsi ini biasanya digunakan jika ingin dilakukan perulangan yang tidak diketahui berapa banyak perulangan yang akan terjadi, namun diketahui kondisi agar perulangan dapat berhenti. </p>
+              </li>
+
+              <!--  While Do -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">While Do</h3>
+                <p class="py-2">Sama seperti <b>While</b>, konsep perulangan pada <b>While Do</b> hanya terdapat sedikit perbedaan. Fungsi ini akan menjalankan statement <b>Do</b> pada saat pertama sekali, lalu melakukan pengecekan terhadap kondisi di <b>While</b>. Jika pada running proses <b>Do</b> sudah menemukan kondisi yang sesuai, maka tidak akan dilakukan proses perulangan. Namun, jika kondisi belum sesuai, statement yang terdapat di fungsi <b>Do</b> akan diulangi terus menerus hingga sesuai kondisi yang dibutuhkan. </p>
+              </li>
+              
+              <!-- Switch Case -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Switch Case</h3>
+                <p class="py-2">
+                  <b>Switch Case</b> merupakan sebuah fungsi yang melakukan percabangan dengan pengecekan pada kondisi yang statis atau tetap. Fungsi ini biasanya digunakan jika kondisi yang ada tidak akan berubah. Layaknya Switch pada sebuah saklar lampu, ketika kondisi sesuai, maka akan menjalankan sebuah perintah dalam statement tersebut. Fungsi ini membutuhkan fungsi <b>Break</b> agar menghentikan statement.
+                </p>
+              </li>
+              
+              <!-- For -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">For</h3>
+                <p class="py-2">
+                  <b>For</b> merupakan sebuah fungsi perulangan yang umumnya digunakan untuk melakukan perulangan statement dengan jumlah perluangan sudah diketahui. Fungsi ini biasanya terdapat 3 atribut, yaitu <b>Start (init counter)</b>, <b>condition (test counter)</b> dan <b>Step (increment counter)</b>. 
+                </p>
+                <p class="py-2">
+                  Berbeda dengan <b>While</b> atau <b>While Do</b>, fungsi ini sulit untuk mendapatkan <b>infinity loop</b> karena jumlah perluangan dan step perulangan dapat diatur.
+                </p>
+              </li>
+
+              <!-- Foreach -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Foreach</h3>
+                <p class="py-2">
+                  <b>Foreach</b> merupakan sebuah fungsi perulangan yang berfungsi untuk mengulangi items pada sebuah array.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Question No. 3 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">3.	Apa itu constructor, method, class, object, variabel, parameter, function, procedure?</h2>
+          </div>
+          <div class="answer">
+            <ul class="list-disc ml-11">
+              <!-- Constructor -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Constructor</h3>
+                <p  class="py-2">
+                  <b>Constructor</b> merupakan fungsi yang akan dijalankan pada saat sebuah <b>Class</b> dilakukan pemanggilan atau diinisialisasi. Pada fungsi ini, umumnya dilakukan inisialisasi dan definisi pada sebuah instance member.
+                </p>
+              </li>
+              
+              <!-- Method -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Method</h3>
+                <p  class="py-2">
+                  <b>Method</b> merupakan fungsi-fungsi yang terdapat pada sebuah class. Fungsi ini dapat berupa static, private protected ataupun public. Method umumnya mengembalikan sebuah nilai (function), namun method ini juga dapat digunakan untuk menjalankan sebuah perintah tertentu tanpa harus mengembalikan nilai (procedure).
+                </p>
+              </li>
+
+              <!-- Class -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Class</h3>
+                <p  class="py-2">
+                  <b>Class</b> merupakan susunan object yang menciptakan suatu instant. <b>Class</b> dapat menampung kerangka dasar dan berisi berbagai method. <b>Class</b> pada umumnya dapat diartikan sebuah klasifikasi dengan berbagai sifat (<b>method</b>) didalamnya.
+                </p>
+              </li>
+              
+              <!-- Object -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Object</h3>
+                <p  class="py-2">
+                  <b>Object</b> merupakan variable atau bagian dari suatu <b>class</b> yang tersusun dari kerangka class tersebut. <b>Object</b> merupakan entitas yang dapat diidentifikasi dan direpresentasikan.
+                </p>
+              </li>
+              
+              <!-- Variabel -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Variable</h3>
+                <p  class="py-2">
+                  <b>Variable</b> sebuah penyimpanan data yang dapat berubah-ubah dengan tipe data yang tetap ataupun yang berbeda tergantung dari bahasa pemrograman yang digunakan. <b>Variable</b> dapat diubah secara langsung ataupun menggunakan sebuah fungsi tertentu.
+                </p>
+              </li>
+              
+              <!-- Function -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Function</h3>
+                <p  class="py-2">
+                  <b>Function</b> adalah kumpulan statement yang dipetakan dalam sebuah himpunan dan dinyatakan dengan lambang atau nama. <b>Function</b> bertujuan untuk memudahkan pemanggilan coding yang berulang (reusable). Selain itu, <b>function</b> juga bertujuan untuk memudahkan pembacaan coding karena lebih rapi. Function akan mengembalikan nilai tertentu setelah menjalankan berbagai statement dengan tipe data tertentu.
+                </p>
+              </li>
+
+              <!-- Procedure -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Procedure</h3>
+                <p  class="py-2">
+                  <b>Procedure</b> mirip seperti <b>Function</b>. Namun, <b>Procedure</b> tidak mengembalikan nilai setelah menjalankan berbagai statement. <b>Procedure</b> umumnya digunakan untuk menjalankan perintah-perintah yang bersifat void.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Question No. 4 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">4.	Perbedaan method=”Post” dan “Get” ?</h2>
+          </div>
+          <div class="answer">
+            <ul class="list-disc ml-11">
+              <!-- Post -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Post</h3>
+                <p  class="py-2">
+                  <b>Post</b> merupakan metode pengiriman data ke server dengan memberikan request dan data tersebut bersifat rahasia antara client dan server. Pada html, method post digunakan untuk mengirimkan data tanpa terlihat pada address bar. Sedangkan pada API, method ini digunakan untuk mengirimkan data dari client ke server agar data yang dikirim lebih aman.
+                </p>
+              </li>
+              
+              <!-- Get -->
+              <li>
+                <h3 class="text-xl text-blue-800 font-medium">Get</h3>
+                <p  class="py-2">
+                  <b>Post</b> merupakan metode pengiriman data ke server dengan memberikan request dan data tersebut bersifat tidak kredensial antara client dan server. Pada html, method post digunakan untuk mengirimkan data dan terlihat pada address bar. Method ini umumnya digunakan untuk mengambil data dari sebuah API.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Question No. 5 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">5.	Jelaskan konsep mengenai web service dan fungsi apa yang digunakan untuk memanggil web service client?</h2>
+          </div>
+          <div class="answer">
+            <p><b>Web Service</b> merupakan seperangkat protokol yang berfungsi untuk melakukan pertukaran data antara aplikasi dengan sistem yang berbeda. <b>Web service</b> bertujuan untuk pertukaran data dalam bahasa yang berbeda.</p>
+
+            <p>Bahasa XML digunakan untuk pemanggilan web service client. Selain menggunakan XML, dapat menggunakan berbagai library HTTP Request di setiap bahasa pemrograman. Contohnya adalah curl di bahasa pemrograman PHP. </p>
+          </div>
+        </div>
+
+        <!-- Question No. 6 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">6.	Jelaskan mengenai MVC dan HMVC!</h2>
+          </div>
+          <div class="answer">
+            <p>
+              <b>MVC</b> (Model View Controller) merupakan pola arsitektur pada pengembangan aplikasi yang umumnya adalah Website. Adapaun <b>Model</b> berfungsi untuk mengelola bagian yang terhubung langsung dengan database. <b>View</b> berfungsi untuk mengelola tampilan yang dapat dilihat oleh pengguna. Sedangkan <b>Controller</b> merupakan penghubung antara model dan view melalui request dari pengguna.
+            </p>
+
+            <p>Sedangkan HMVC merupakan konsep MVC yang hirarki atau pengguna MVC dalam setiap fitur. Jika pada konsep MVC, suatu aplikasi memiliki folder model, view dan controller untuk seluruh fitur. Berbeda dengan HMVC, setiap fitur memiliki arsitektur MVC dan memudahkan kompilasi serta lebih tertata rapi.</p>
+          </div>
+        </div>
+
+        <!-- Question No. 7 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">7.	Sebutkan fungi curl() dalam php!</h2>
+          </div>
+          <div class="answer">
+            <p>
+              <b>curl()</b> merupakan library yang berfungsi untuk melakukan HTTP Request di bahasa pemrograman PHP. <b>Client URL (cURL)</b> akan berhubungan dengan server untuk mengirim request ataupun menerima response.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question No. 8 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">8.	Bagaimana menampilkan sebuah element array dalam PHP ?</h2>
+          </div>
+          <div class="answer">
+            <p>
+              Array dapat ditampilkan dengan menggunakan fungsi perulangan for maupun foreach. Pada umumnya foreach digunakanuntuk menampilkan data dalam array karena lebih efisien.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question No. 9 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">9.	Perbedaan HTTP dan HTTPS?</h2>
+          </div>
+          <div class="answer">
+            <p>
+              <b>HTTP</b> atau <b>Hypertext Transfer Protocol</b> merupakan sebuah protokol jaringan pada bagian application layer. Protokol ini berfungsi untuk proses transfer informasi, dokumen, gambar dan video antar komputer. <b>HTTP menyediakan berbagai kumpulan perintah jaringan  yang berfungsi untuk melakukan komunikasi antara web server dengan komputer client.</b>
+            </p>
+
+            <p>
+              Sedangkan <b>HTTPS</b> merupakan protokol HTTP yang telah dikembangkan menjadi lebih aman. Protokol <b>HTTPS</b> telah ditambahkan protokol SSL yang berfungsi untuk mengenkripsi data pada saat melakukan proses request.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question No. 10 -->
+        <div class="question-box py-10">
+          <div class="question mb-3">
+            <h2 class="text-2xl text-blue-800 font-medium">10.	Jelaskan Apa itu API? sebutkan contohnya?</h2>
+          </div>
+          <div class="answer">
+            <p>
+              <b>API</b> atau <b>Application Programming Interface</b> merupakan interface yang dapat menghubungkan satu aplikasi dengan aplikasi lain. <b>API</b> berfungsi untuk mengirim permintaan dari client ke server (request) dan menerima data dari server (response). 
+            </p>
+
+            <p>
+              API memiliki beberapa prinsip kerja, yaitu : <b>API REST</b>, <b>API Websocket</b>, <b>API SOAP</b> dan <b>API RPC</b>. API REST adalah yang paling populer dan sangat fleksible saat ini. API jenis ini melakukan input klient untuk menjalankan internal function dan mengembalikan hasilnya ke klien.
+            </p>
+
+            <p>
+              Beberapa contoh API yang umum misalnya API pokemon, BMKG, dan banyak lainnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
